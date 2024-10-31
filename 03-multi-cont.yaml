@@ -1,0 +1,11 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: expense
+spec:
+  conatainers:
+  - name: nginx
+    image: nginx
+  - name: almalinux
+    image: almalinux:9
+    command: ["sleep", "1000"]
