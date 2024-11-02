@@ -1,0 +1,15 @@
+apiVersion: V1
+kind: Servide
+metadata:
+  name: nginx-alb
+spec:
+  type: LoadBalancer
+  selector:
+    project: expense
+    enevironment: dev
+    module: backend
+  ports:
+  - name: nginx-svc-nodeport
+    protocol: TCP
+    port: 80
+    targetPort: 80
