@@ -8,7 +8,7 @@ spec:
     project: expense
     enevironment: dev
     module: backend
-  Ports:
+  ports:
     name: nginx-svc-nodeport
     protocol: TCP
     port: 80
