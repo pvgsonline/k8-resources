@@ -11,5 +11,5 @@ spec:
   - name: nginx-svc-port
     protocol: tcp
     port: 80 #service port
-    targetport: 80 #container port
+    targetPort: 80 #container port
   
