@@ -20,7 +20,7 @@ spec:
   storageClassName: ""
   volumeName: ebs-static
   accessModes:
-  -ReadWriteOnce
+  - ReadWriteOnce
   resources:
    requests:
     storage: 2Gi
