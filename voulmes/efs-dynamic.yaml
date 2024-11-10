@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: "expense-efs"
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteMany
   resources:
    requests:
     storage: 3Gi
