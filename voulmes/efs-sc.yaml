@@ -3,9 +3,9 @@ kind: StorageClass
 metadata:
   name: expense-efs
 reclaimPolicy: Retain
-provisioner: ebs.csi.aws.com
-volumeBindingMode: WaitForFirstConsumer #storage class will be crated when pod is created
+provisioner: ebs.csi.aws.com 
 parameters:
+  provisioningMode: efs-ap
   fileSystemId: fs-0bd850b665cba00d8
   directoryPerms: "700"
   basePath: "/expense" # optional

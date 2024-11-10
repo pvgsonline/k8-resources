@@ -5,7 +5,7 @@ metadata:
 spec:
   storageClassName: "expense-efs"
   accessModes:
-  - ReadWriteOnce
+  - ReadWriteMany
   resources:
    requests:
     storage: 2Gi
@@ -17,8 +17,6 @@ metadata:
   labels:
     purpose: efs-dynamic    
 spec:
-  nodeSelector:
-    topology.kubernetes.io/zone: us-east-1f
   containers:
   - name: nginx
     image: nginx
